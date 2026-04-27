@@ -1,11 +1,11 @@
 # MakiLab — Adrien Beton
 
 > **Strategy, data, and sustainability — where they actually meet.**
-> Personal site and product lab of Adrien Beton. Live at **[makilab.io](https://makilab.io)**.
+> Personal site and product lab of Adrien Beton. Live at **[makilab-adrien.vercel.app](https://makilab-adrien.vercel.app)**.
 
-[![Site](https://img.shields.io/badge/site-makilab.io-1a3a4a)](https://makilab.io)
+[![Site](https://img.shields.io/badge/site-live-1a3a4a)](https://makilab-adrien.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Adrien%20Beton-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/abeton)
-[![Location](https://img.shields.io/badge/relocating-Sydney%20%F0%9F%87%A6%F0%9F%87%BA-d97757)](https://makilab.io#cta)
+[![Location](https://img.shields.io/badge/relocating-Sydney%20%F0%9F%87%A6%F0%9F%87%BA-d97757)](https://makilab-adrien.vercel.app#cta)
 
 ---
 
@@ -37,13 +37,13 @@ MakiLab is the umbrella for the small tools I ship between projects — born fro
 | **TRACE** | Where responsible AI should start. 5-pillar diagnostic, 30 questions. | Responsible AI · Governance · Audit |
 | **Food Impact Chatbot** | Bilingual conversational LCA, RAG over Agribalyse. | Life Cycle Assessment · Food · Agriculture |
 
-More on each at **[makilab.io#products](https://makilab.io#products)**.
+More on each at **[makilab.io#products](https://makilab-adrien.vercel.app#products)**.
 
 ---
 
 ## What's in this repository
 
-This repo hosts the **makilab.io** website — a static one-pager.
+This repo hosts the **[makilab-adrien.vercel.app](https://makilab-adrien.vercel.app)** site — a static one-pager deployed on **Vercel**.
 
 ```
 index.html        # The whole site, single file (HTML + CSS + JS inline)
@@ -77,6 +77,6 @@ python3 -m http.server 8000
 ## Contact
 
 **Adrien Beton** — Lyon → Sydney
-[makilab.io](https://makilab.io) · [LinkedIn](https://linkedin.com/in/abeton)
+[makilab-adrien.vercel.app](https://makilab-adrien.vercel.app) · [LinkedIn](https://linkedin.com/in/abeton)
 
 > *Trained as an engineer. Curious by nature. Hands-on by habit. Restless about the state of the world.*
