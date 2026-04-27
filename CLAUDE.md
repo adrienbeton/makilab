@@ -1,146 +1,118 @@
-# MakiLab Site — Manifeste Scrollytelling
+# MakiLab Site — One-Pager
 
-Site personnel one-page pour **Adrien Beton / makilab.io**. Scrollytelling GSAP, HTML statique, aucun framework.
+Site personnel one-page pour **Adrien Beton / makilab.io**. **Source de vérité : `index.html`** (single-file, all CSS+JS inline). Toute mise à jour de ce CLAUDE.md doit refléter le site, jamais l'inverse.
 
 ---
 
 ## Contexte projet
 
-**Objectif** : Site manifeste qui raconte le parcours d'Adrien → ses convictions → MakiLab. Cible double : recruteurs (Sydney) + prospects consulting.
+**Objectif** : Présenter Adrien (Sydney relocation) + MakiLab (lab de produits) en une page narrative. Cible : recruteurs Sydney + prospects consulting.
 
-**Positionnement** : "Data intelligence for positive impact." Pas une landing corporate — un manifeste authentique, sobre, technique.
+**Positionnement** : Strategy + data + sustainability — où ces trois champs se rencontrent vraiment.
 
-**Stack** : HTML5 + vanilla CSS3 + vanilla JS + GSAP 3.12.5 (CDN). Fonts : Outfit + JetBrains Mono (Google Fonts). Pas de build, pas de framework.
+**Stack** :
+- HTML5 + vanilla CSS + vanilla JS, **single file** (`index.html`, ~1600 lignes, inline)
+- GSAP 3.12.5 + ScrollTrigger + ScrollToPlugin (cdnjs)
+- Pas de Lenis, pas de build, pas de framework
+- Fonts (Google Fonts) : **Outfit** (400-800) + **JetBrains Mono** (400) + **Caveat** (400, 600)
 
 ---
 
-## Structure narrative (immuable)
+## Structure (ordre des sections dans `index.html`)
 
-1. **Hero** — Adrien, statement, portrait
-2. **Constat** — Le monde est cassé (brittle, anxious, non-linear)
-3. **Conviction 1** — Sustainability as Operating System
-4. **Conviction 2** — Transformation as Orchestration Problem
-5. **Conviction 3** — Technology with Responsibility
-6. **Pivot** — "I didn't stop at thinking. I build." → transition vers MakiLab
-7. **MakiLab** — Le lab + les produits
-8. **CTA** — Sydney relocation, hiring / tool / curious
+1. `#hero` — split layout : identité (gauche) / rôles terracotta (droite)
+2. `#conviction1` — Sustainability (chapter 01)
+3. `#conviction2` — Transformation (chapter 02) — visuel 4 pétales (Vision / Steering / Tools / People autour de "Orchestration")
+4. `#conviction3` — Technology (chapter 03) — visuel terminal timeline 2007 → 2025
+5. `#pivot` — reveal du logo MakiLab
+6. `#products` — Latest projects, carousel V-thumb (4 produits)
+7. `#cta` — Contact
+8. `<footer>` — "From Lyon to Sydney."
+
+UI globale : tweaks panel (accent / grain / chapters / herotop swappers), progress dots, hamburger overlay nav, SVG zoom overlay.
 
 ---
 
 ## Design system
 
-**Palette Deep Ocean :**
-- `--color-primary: #1a3a4a` (navy)
-- `--color-secondary: #2d6a7a` (teal)
-- `--color-accent: #d97757` (terracotta)
-- `--color-accent-deep: #c45a3c`
-- `--color-teal-light: #4a9aaa`
-- `--color-bg-light: #f5f0eb` (off-white)
-- `--color-bg-dark: #0a0a0c` (near-black)
+**Palette (`:root` — noms courts, pas `--color-*`) :**
+```css
+--cream: #f5f0eb;        --warm-white: #faf7f4;
+--primary: #1a3a4a;      --secondary: #2d6a7a;
+--accent: #d97757;       --accent-deep: #c45a3c;
+--teal-light: #4a9aaa;   --muted: #8a9a9a;
+```
 
-**Typo :** Outfit (body/titres) + JetBrains Mono (markers, code, chiffres clés)
+**Typo :**
+```css
+--font-body: 'Outfit', sans-serif;
+--font-mono: 'JetBrains Mono', monospace;
+--font-hand: 'Caveat', cursive;   /* "Hey! I'm", radiant petal notes */
+```
 
-**Ton visuel :** sobre, fonctionnel, data-forward. Pas décoratif.
+**Ton visuel :** sobre, data-forward, accents manuscrits Caveat ponctuels.
 
 ---
 
-## Copy clé (source of truth)
+## Copy clé (verbatim depuis `index.html`)
 
-**Hero :**
-```
-Adrien Beton
-17 years turning climate strategy into operations.
-Now building the tools I wish I'd had.
-```
+**Hero**
+- "Hey! I'm" (Caveat) → **Adrien Beton** → "Polytechnique · Imperial College London"
+- Status pill : `AVAILABLE · SYDNEY · FULL RIGHTS · LINKEDIN`
+- Lead : *"I've spent 17 years where three fields belong together."*
+- Threads : 01 Sustainability / 02 Transformation / 03 Technology
+- Coda : *"Trained as an engineer. Curious by nature. Hands-on by habit. Restless about the state of the world."*
+- Sectors : Energy · Transport · Infrastructure · +12 more
+- Right panel roles : Builder. / Operator. / Architect. / Explorer.
+- Stats : 100+ Projects · 50+ Clients · 17 Years
 
-**Constat :**
-```
-Brittle. Anxious. Non-linear. Incomprehensible.
-Supply chains snap. Regulations multiply faster than organisations can absorb them.
-Climate targets are set in boardrooms and forgotten in spreadsheets.
-The old playbook doesn't hold.
-```
+**Convictions (statements)**
+- C1 : *"Sustainability is not a cause. It is a business performance system."*
+- C2 : *"Transformation is not a deliverable. It's an orchestration problem."*
+- C3 : *"Technology is an accelerator. Not a shortcut, not an endgame."*
 
-**Conviction 1 :**
-```
-17 years inside the machine.
-Sustainability is not a cost centre. It's an operating system.
-Climate, resources, supply chains, social performance, governance, digital responsibility
-— these aren't separate problems. They're one system.
-```
-Markers : net-zero roadmaps (40 pays), LCA multi-critères (15+ secteurs), SBTi, CSRD, 1 000 ktCO₂ sur un programme.
+**Pivot**
+- "meet" + logo MakiLab + *"where experience meets the itch to experiment · learn · ship"*
 
-**Conviction 2 :**
-```
-17 years watching brilliant strategies die on slide 47.
-Transformation is not a deliverable. It's an orchestration problem.
-Vision. Measurement. Tools. Change. Four levers.
-Most organisations activate one and call it strategy.
-```
-Markers : 15+ cycles design thinking, strategic foresight, frameworks adoptés à l'échelle orga.
+**CTA**
+- Headline : *"Let's build something together"*
+- Subtitle : *"Relocating to Sydney with my family with full working rights. Looking for a role where strategy, data and sustainability actually meet."*
+- Bouton unique : "Connect on LinkedIn" → linkedin.com/in/abeton
+- Caveat : *"Always up for a coffee :)"*
 
-**Conviction 3 :**
-```
-17 years building tools — from automated LCA spreadsheets to AI agents.
-But technology without domain expertise produces beautiful interfaces on top of garbage data.
-And technology without responsibility creates new problems while solving old ones.
-```
-Markers : AI climate workflows, responsible AI maturity, green IT, infra self-hosted.
-
-**Pivot :**
-```
-That's 17 years of thinking about these problems.
-But I didn't stop at thinking. I build.
-
-Polytechnique × Imperial College. 15 years across EMEA. 81 projects. 15+ sectors.
-I've spent my career at this intersection — thinking strategy and shipping tools.
-And I got tired of building them for someone else's PowerPoint.
-```
-
-**CTA :**
-```
-I'm relocating to Sydney. Looking for where climate, tech, and execution actually meet.
-
-Hiring? 17 years of building inside consulting. Ready to build inside your team.
-Need a tool? AI workflows for climate and ESG teams. Let's scope it.
-Curious? Always up for a real conversation.
-
-adrien@makilab.io · LinkedIn
-```
+(Pas d'email affiché. Pas de triple framing Hiring/Tool/Curious.)
 
 ---
 
-## Produits MakiLab
+## Produits MakiLab (section `#products`)
 
-| Produit | Statut | Problème résolu |
+| Produit | Tagline | Description |
 |---|---|---|
-| Scope3 Analyzer | MVP actif | Calcul automatisé émissions Scope 3 fournisseurs (Python + Claude API) |
-| Food Impact Chatbot | MVP actif | LCA alimentaire conversationnel (RAG + Agribalyse, bilingue) |
-| Climate Framework Translator | Concept | Équivalences CSRD/EU ↔ ASRS/australien |
-| Responsible AI Maturity Mapper | Concept | Assessment gouvernance IA responsable |
-| MakiPV / PV Business Case | En dev | Modélisation projets photovoltaïques |
+| **Scope3 Trail** | From spreadsheet chaos to audit-ready | Portfolio supplier carbon emissions, AI agents |
+| **PVision** | From hours in PVSyst to minutes on a map | Solar pre-study + financial model |
+| **TRACE** | Where responsible AI should start | Diagnostic IA responsable, 5 piliers, 30 questions |
+| **Food Impact Chatbot** | Turning a database into a conversation | RAG bilingue sur Agribalyse |
+
+Pas de colonne statut dans le site. Assets : `assets/<product>{1,2,3}-{desktop,mobile}.png`.
 
 ---
 
-## Fichiers clés
+## Fichiers du repo (post-cleanup)
 
 ```
-explorations/          # 14 prototypes HTML (v1 → v10b) — ne pas modifier
-brand-guidelines/      # Assets visuels, palette, logo
-docs/superpowers/
-  plans/               # Plan d'implémentation détaillé
-  specs/               # Specs design v1 → v4
+index.html             # Source de vérité, single-file
+assets/                # PNG produits (desktop + mobile) + logo wordmark + portrait
+CLAUDE.md              # Ce fichier
+.gitignore
 ```
 
-**Prototype de référence :** `explorations/v4-manifeste.html` (direction retenue).
-**Plan actif :** `docs/superpowers/plans/2026-03-24-manifeste-scrollytelling.md`
+Tout le reste (`explorations/`, `brand-guidelines/`, `docs/`, `archive/`, `.playwright-mcp/`) est **gitignored** — local only.
 
 ---
 
 ## Règles de travail
 
-- **Jamais modifier les fichiers dans `explorations/`** — ce sont des archives de référence
-- Nouvelles itérations → nouveau fichier ou dossier dédié
-- Le copy ci-dessus est la source de vérité — ne pas improviser les textes
-- Animations GSAP uniquement (pas de CSS transitions pour les effets scrollytelling)
-- Confirmation requise avant tout push ou déploiement
+- `index.html` = source de vérité unique. Si CLAUDE.md diverge du site, **mettre CLAUDE.md à jour, pas le site**.
+- Toute modification de copy = vérifier le rendu dans `index.html` avant de commit.
+- Animations via GSAP uniquement (ScrollTrigger / ScrollToPlugin), pas de CSS transitions pour le scrollytelling.
+- Confirmation requise avant tout push ou déploiement.
