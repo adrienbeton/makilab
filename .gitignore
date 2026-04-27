@@ -1,1 +1,9 @@
+.DS_Store
 .superpowers/
+.playwright-mcp/
+archive/
+explorations/
+brand-guidelines/
+docs/
+node_modules/
+*.log
