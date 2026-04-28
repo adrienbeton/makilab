@@ -294,6 +294,14 @@
     /* ── Radiant ── */
     .radiant-container { position: relative; width: 100%; max-width: 760px; margin: 0 auto; overflow: visible; padding: 0 20px; box-sizing: border-box; }
     .radiant-svg { width: 100%; height: auto; }
+    .radiant-annotations { display: none; }
+    @media (max-width: 1024px) {
+      .radiant-svg .petal-note { display: none; }
+      .radiant-annotations { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 24px 0 0; padding: 0; list-style: none; }
+      .radiant-annotations li { display: flex; flex-direction: column; gap: 2px; }
+      .radiant-annotations .ann-label { font-weight: 800; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+      .radiant-annotations .ann-note { font-family: var(--font-hand); font-size: 20px; line-height: 1.25; color: var(--primary); opacity: 0.8; }
+    }
 
     /* ── Conv3 ── */
     /* ── Terminal ── */
@@ -441,7 +449,8 @@
     .svg-zoom-overlay.active { opacity: 1; pointer-events: auto; }
     .svg-zoom-overlay svg { max-width: 100%; max-height: 90vh; }
     .svg-zoom-close { position: absolute; top: 16px; right: 16px; font-size: 24px; color: var(--primary); background: none; border: none; cursor: pointer; padding: 8px; }
-    .wheel-container.zoomable { cursor: pointer; }
+    .wheel-container.zoomable, .radiant-container.zoomable { cursor: pointer; }
+    .svg-zoom-overlay .petal-note { display: initial !important; }
 
     /* ── Hero top layout variations (topbar ↔ status pill) ── */
     /* T1 · Duo subtle (default) — just shrink status to reduce competition */
@@ -568,7 +577,6 @@
 
       .wheel-container { margin-top: 0; }
       .radiant-container { max-width: 100%; padding: 0; overflow: visible; }
-      .radiant-svg .petal-note { font-size: 18px; }
 
       .terminal { max-width: 100%; }
       .terminal-line { white-space: normal; font-size: 12px; }
@@ -620,7 +628,6 @@
       .wheel-container { max-width: 320px; margin: 0 auto; }
 
       .radiant-container { max-width: 100%; }
-      .radiant-svg .petal-note { display: none; }
       .radiant-svg .petal-label { font-size: 14px; }
       .radiant-svg .petal-center { font-size: 14px; }
 
@@ -858,6 +865,12 @@
               <text class="petal-note" x="152" y="315" text-anchor="end">they resist poorly designed</text>
               <text class="petal-note" x="152" y="345" text-anchor="end">transformation systems</text>
             </svg>
+            <ul class="radiant-annotations" aria-hidden="true">
+              <li><span class="ann-label" style="color: var(--secondary)">Vision</span><span class="ann-note">vision without execution is just PPT</span></li>
+              <li><span class="ann-label" style="color: var(--teal-light)">Steering</span><span class="ann-note">steering in 2026 is de-siloed, agent-ready data architecture</span></li>
+              <li><span class="ann-label" style="color: var(--accent)">Tools</span><span class="ann-note">the right tool, for the right people, at the right moment</span></li>
+              <li><span class="ann-label" style="color: var(--secondary)">People</span><span class="ann-note">people don’t resist change, they resist poorly designed transformation systems</span></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -1481,17 +1494,19 @@
         const overlay = document.getElementById('svg-zoom-overlay');
         const zoomContent = document.getElementById('svg-zoom-content');
         const closeBtn = overlay.querySelector('.svg-zoom-close');
-        const wheelContainer = document.querySelector('.wheel-container');
 
-        if (wheelContainer) {
-          wheelContainer.classList.add('zoomable');
-          wheelContainer.addEventListener('click', () => {
-            const svgClone = document.querySelector('.wheel-svg').cloneNode(true);
+        function bindZoom(containerSelector, svgSelector, fullViewBox) {
+          const container = document.querySelector(containerSelector);
+          if (!container) return;
+          container.classList.add('zoomable');
+          container.addEventListener('click', () => {
+            const svgClone = document.querySelector(svgSelector).cloneNode(true);
             // Reset opacity on cloned elements so everything is visible
             svgClone.querySelectorAll('[style]').forEach(el => {
               el.style.opacity = '';
               el.style.clipPath = '';
             });
+            if (fullViewBox) svgClone.setAttribute('viewBox', fullViewBox);
             svgClone.style.width = '100%';
             svgClone.style.height = 'auto';
             zoomContent.innerHTML = '';
@@ -1500,6 +1515,8 @@
             document.body.style.overflow = 'hidden';
           });
         }
+        bindZoom('.wheel-container', '.wheel-svg');
+        bindZoom('.radiant-container', '.radiant-svg', '0 0 700 540');
 
         function closeZoom() {
           overlay.classList.remove('active');
