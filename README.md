@@ -13,7 +13,7 @@
 
 Engineer, strategist, and builder. Polytechnique × Imperial College London. **17 years** at the intersection of **sustainability, transformation, and technology** across energy, transport, infrastructure, and 12+ other sectors.
 
-After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**, and building **MakiLab** a small, opinionated lab for tools that climate and ESG teams actually need.
+After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**.
 
 **Looking for** :
 - Senior roles in Australia where climate, data, and execution meet (sustainability strategy, ESG tech, climate AI, decarbonisation programs).
@@ -26,7 +26,7 @@ After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I 
 
 ## What is MakiLab?
 
-MakiLab is the umbrella for the small tools I ship between projects. Each one solves a problem I hit personally. **Domain expertise first, technology second.**
+MakiLab is the umbrella for the small tools I ship to experiment, learn or accelerate real life projects. Each one solves/solved a problem I hit personally. **Domain expertise first, technology second.**
 
 ### Currently shipping
 
@@ -43,28 +43,7 @@ More on each at **[adrienbeton.vercel.app#products](https://adrienbeton.vercel.a
 
 ## What's in this repository
 
-This repo hosts the **[adrienbeton.vercel.app](https://adrienbeton.vercel.app)** site — a static one-pager deployed on **Vercel**.
-
-```
-index.html        # The whole site, single file (HTML + CSS + JS inline)
-assets/           # Product screenshots, wordmark, portrait
-README.md         # You are here
-```
-
-### Stack
-
-- **Single-file static site.** No build step, no framework, no dependencies to install.
-- [**GSAP**](https://gsap.com/) 3.12.5 + ScrollTrigger + ScrollToPlugin (via cdnjs) for scroll-driven animations.
-- **Google Fonts** — Outfit (body), JetBrains Mono (data), Caveat (handwritten accents).
-- Hosted as a static page. Works on any CDN or static host.
-
-### Run locally
-
-```sh
-# any static server works
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
+This repo hosts the **[adrienbeton.vercel.app](https://adrienbeton.vercel.app)** my static one-pager presenting me and some of my inner convictions :)
 
 ---
 
