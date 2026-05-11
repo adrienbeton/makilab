@@ -1,6 +1,6 @@
 # MakiLab — Adrien Beton
 
-> **Strategy, data, and sustainability — where they actually meet.**
+> **Strategy, data, and sustainability where they actually meet.**
 > Personal site and product lab of Adrien Beton. Live at **[adrienbeton.vercel.app](https://adrienbeton.vercel.app)**.
 
 [![Site](https://img.shields.io/badge/site-live-1a3a4a)](https://adrienbeton.vercel.app)
@@ -11,7 +11,7 @@
 
 ## About Adrien Beton
 
-Engineer, strategist, and builder. Polytechnique × Imperial College London. **17 years** at the intersection of **sustainability, transformation, and technology** — across energy, transport, infrastructure, and 12+ other sectors.
+Engineer, strategist, and builder. Polytechnique × Imperial College London. **17 years** at the intersection of **sustainability, transformation, and technology** across energy, transport, infrastructure, and 12+ other sectors.
 
 After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**, and building **MakiLab** a small, opinionated lab for tools that climate and ESG teams actually need.
 
