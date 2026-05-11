@@ -13,7 +13,7 @@
 
 Engineer, strategist, and builder. Polytechnique × Imperial College London. **17 years** at the intersection of **sustainability, transformation, and technology** — across energy, transport, infrastructure, and 12+ other sectors.
 
-After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**, and building **MakiLab** — a small, opinionated lab for tools that climate and ESG teams actually need.
+After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**, and building **MakiLab** a small, opinionated lab for tools that climate and ESG teams actually need.
 
 **Looking for** :
 - Senior roles in Australia where climate, data, and execution meet (sustainability strategy, ESG tech, climate AI, decarbonisation programs).
@@ -26,7 +26,7 @@ After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I 
 
 ## What is MakiLab?
 
-MakiLab is the umbrella for the small tools I ship between projects — born from 17 years of watching brilliant strategies die in spreadsheets. Each one solves a problem I hit personally. **Domain expertise first, technology second.**
+MakiLab is the umbrella for the small tools I ship between projects. Each one solves a problem I hit personally. **Domain expertise first, technology second.**
 
 ### Currently shipping
 
