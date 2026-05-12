@@ -26,7 +26,9 @@ After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I 
 
 ## What is MakiLab?
 
-MakiLab is the umbrella for the small tools I ship to experiment, learn or accelerate real life projects. Each one solves/solved a problem I hit personally.
+> *Where experience meets the itch to **experiment · learn · ship**.*
+
+My playground for learning, experimenting and sharpening my craft. A place to explore trends, prototype, and catalyse work projects. Each tool solves/solved a problem I hit personally.
 
 ### Currently shipping
 
