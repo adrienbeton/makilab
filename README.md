@@ -1,60 +1,30 @@
-# MakiLab — Adrien Beton
+# adrienbeton.vercel.app
 
-> **Strategy, data, and sustainability where they actually meet.**
-> Personal site and product lab of Adrien Beton. Live at **[adrienbeton.vercel.app](https://adrienbeton.vercel.app)**.
+Source of my personal site & product lab — a static one-pager presenting who I am
+and a few of my convictions. Zero framework, self-hosted fonts, GSAP animations,
+deployed on Vercel.
 
-[![Site](https://img.shields.io/badge/site-live-1a3a4a)](https://adrienbeton.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adrien%20Beton-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/abeton)
-[![Location](https://img.shields.io/badge/relocating-Sydney%20%F0%9F%87%A6%F0%9F%87%BA-d97757)](https://adrienbeton.vercel.app#cta)
+**Live:** [adrienbeton.vercel.app](https://adrienbeton.vercel.app)
+**About me:** [github.com/adrienbeton](https://github.com/adrienbeton) · [LinkedIn](https://linkedin.com/in/abeton)
 
----
+## Stack
 
-## About Adrien Beton
+Vanilla HTML / CSS / JS · [GSAP](https://gsap.com) for scroll animations · WebP assets ·
+self-hosted variable fonts. No build step, no dependencies — a single `index.html`
+served as-is.
 
-Engineer, strategist, and builder.
-I help organisations activate sustainability as the operating discipline of a performant and resilient business, and build or operate the programmes, governance and tools that make that real.
-**17 years** at the intersection of **sustainability, transformation, and technology** across energy, transport, infrastructure, and 12+ other sectors. 
-50+ clients, 100+ projects.
-Imperial College (UK) x Polytechnique (FR). 
+## Structure
 
-→ Reach out on **[LinkedIn](https://linkedin.com/in/abeton)**.
+```
+index.html        markup, styles and scripts in one file
+assets/           portraits, project shots (WebP), fonts
+vercel.json       output config
+```
 
----
+## Run locally
 
-## What is MakiLab?
+Any static server works:
 
-MakiLab is my personal lab: where experience meets the drive to **learn · build · ship**.* 
-Built out of passion, fed by work.
-Nearly two decades of exploration, builds and projects that catalyse the work.
-
-### Currently shipping
-
-| Project | One-liner | Domain |
-|---|---|---|
-| **Scope3 Trail** | From spreadsheet chaos to audit-ready supplier carbon emissions. AI agents over a structured portfolio. | Carbon accounting · Scope 3 · CSRD |
-| **PVision** | From hours in PVSyst to minutes on a map. Solar pre-study + financial model. | Renewables · Photovoltaic · Project finance |
-| **TRACE** | Where responsible AI should start. 5-pillar diagnostic, 30 questions. | Responsible AI · Governance · Audit |
-| **Food Impact Chatbot** | Bilingual conversational LCA, RAG over Agribalyse. | Life Cycle Assessment · Food · Agriculture |
-
-More on each at **[adrienbeton.vercel.app#products](https://adrienbeton.vercel.app#products)**.
-
----
-
-## What's in this repository
-
-This repo hosts the **[adrienbeton.vercel.app](https://adrienbeton.vercel.app)** my static one-pager presenting me and some of my inner convictions :)
-
----
-
-## Topics
-
-`sustainability` · `climate-tech` · `esg` · `scope-3` · `lca` · `responsible-ai` · `decarbonisation` · `csrd` · `sydney` · `consulting` · `gsap` · `static-site` · `one-pager` · `portfolio`
-
----
-
-## Contact
-
-**Adrien Beton** — Lyon → Sydney
-[adrienbeton.vercel.app](https://adrienbeton.vercel.app) · [LinkedIn](https://linkedin.com/in/abeton)
-
-> *Trained as an engineer. Curious by nature. Hands-on by habit. Restless about the state of the world.*
+```bash
+python3 -m http.server 8000   # then open http://localhost:8000
+```
