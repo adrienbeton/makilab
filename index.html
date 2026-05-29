@@ -64,7 +64,6 @@
       "addressLocality": "Sydney",
       "addressCountry": "AU"
     },
-    "email": "",
     "worksFor": {
       "@type": "Organization",
       "name": "MakiLab",
@@ -1550,25 +1549,6 @@
         closeBtn.addEventListener('click', closeZoom);
         overlay.addEventListener('click', (e) => { if (e.target === overlay) closeZoom(); });
       }
-    });
-
-    // ── Copy email on CTA ──
-    document.addEventListener('DOMContentLoaded', () => {
-      const copyBtn = document.getElementById('copy-email');
-      if (!copyBtn) return;
-      const label = copyBtn.querySelector('.cta-email-label');
-      const originalHtml = label ? label.innerHTML : '';
-      copyBtn.addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText('');
-          if (label) {
-            label.innerHTML = '<span class="copied-ok">copied ✓</span>';
-            setTimeout(() => { label.innerHTML = originalHtml; }, 1800);
-          }
-        } catch (e) {
-          window.location.href = 'mailto:';
-        }
-      });
     });
 
     // ── Tweaks panel ──
