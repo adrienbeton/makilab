@@ -13,22 +13,15 @@
 
 Engineer, strategist, and builder. Polytechnique × Imperial College London. **17 years** at the intersection of **sustainability, transformation, and technology** across energy, transport, infrastructure, and 12+ other sectors.
 
-After 17 years inside top-tier consulting (100+ projects, 50+ clients, EMEA), I am **relocating to Sydney with my family with full working rights**.
-
-**Looking for** :
-- Senior roles in Australia where climate, data, and execution meet (sustainability strategy, ESG tech, climate AI, decarbonisation programs).
-- Consulting engagements scoping AI workflows for sustainability, Scope 3, LCA, or responsible AI governance.
-- Real conversations with people building in this space.
-
 → Reach out on **[LinkedIn](https://linkedin.com/in/abeton)**.
 
 ---
 
 ## What is MakiLab?
 
-> *Where experience meets the itch to **experiment · learn · ship**.*
-
-My playground for learning, experimenting and sharpening my craft. A place to explore trends, prototype, and catalyse work projects. Each tool solves/solved a problem I hit personally.
+MakiLab is my personal lab: where experience meets the drive to **learn · build · ship**.* 
+Built out of passion, fed by work.
+Nearly two decades of exploration, builds and projects that catalyse the work.
 
 ### Currently shipping
 
