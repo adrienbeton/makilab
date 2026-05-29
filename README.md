@@ -11,10 +11,11 @@
 
 ## About Adrien Beton
 
-Engineer, strategist, and builder. Imperial College (UK) x Polytechnique (FR). 
+Engineer, strategist, and builder.
 I help organisations activate sustainability as the operating discipline of a performant and resilient business, and build or operate the programmes, governance and tools that make that real.
 **17 years** at the intersection of **sustainability, transformation, and technology** across energy, transport, infrastructure, and 12+ other sectors. 
 50+ clients, 100+ projects.
+Imperial College (UK) x Polytechnique (FR). 
 
 → Reach out on **[LinkedIn](https://linkedin.com/in/abeton)**.
 
